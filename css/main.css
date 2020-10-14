@@ -10,3 +10,50 @@
 input[type=file]{
     display: none;
 }
+
+#multiup{
+    background: rgb(243 255 249) !important;
+    cursor: pointer;
+    min-height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 20px 20px;
+    text-align: center;
+    margin: 2em 0;
+    width: 100%;
+}
+
+#fileList{
+    float: left;
+}
+
+#fileList ul{
+    margin: 0px;
+}
+
+#fileList ul li{
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 1em;
+    border: 4px white solid;
+    box-shadow: 2px 2px 3px 0px #a1a1a1;
+}
+
+#fileList ul li img{
+    display: block;
+    height: 120px;
+    cursor: default;
+}
+
+#fileList ul li button{
+    position: relative;
+    bottom: 37px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px 0px #a1a1a1;
+}
