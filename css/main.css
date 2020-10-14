@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Fedoka; /* Имя шрифта */
+    src: url(../font/FredokaOne-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+#logo-container{
+    font-family: Fedoka;
+}
+
+input[type=file]{
+    display: none;
+}
