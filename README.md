@@ -1,4 +1,6 @@
 # Photopicker
+JQuery plugin.
+
 A multiple photo picker for web forms. Helps to mark up web form with multiple images.
 Takes images format: _image/jpeg, image/png_.
 ## Requirements
