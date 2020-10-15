@@ -1,6 +1,7 @@
 $.fn.photopicker = function(options) {
     const ID = this.attr('id');
     const root = document.getElementById(ID);
+    let availableFormats = ['image/jpeg','image/png'];
     let fileList = document.getElementById("fileList"),
         maxFiles = 5,
         form = null;
@@ -43,6 +44,9 @@ $.fn.photopicker = function(options) {
                 limit = maxFiles;
             }
             for (let i = 0; i < limit; i++) {
+                if(availableFormats.indexOf(this.files[i].type) == -1){
+                    continue;
+                }
                 const li = document.createElement("li");
                 list.appendChild(li);
                 const img = document.createElement("img");
