@@ -4,6 +4,7 @@ $.fn.photopicker = function(options) {
     let availableFormats = ['image/jpeg','image/png'];
     let fileList = document.getElementById("fileList"),
         maxFiles = 5,
+        inputName = "files[]",
         form = null;
     if(document.getElementsByTagName('form').length == 0){
         console.log('PhotoPicker says: Form is not found. Create form first and put photopicker element inside that form.');
@@ -17,11 +18,14 @@ $.fn.photopicker = function(options) {
     if(typeof (options.maxFiles) !== 'undefined'){
         maxFiles = options.maxFiles;
     }
+    if(typeof (options.inputName) !== 'undefined'){
+        inputName = options.inputName;
+    }
 
     //create input file field
     let input = document.createElement("input");
     input.setAttribute("type", "file");
-    input.setAttribute("name", "files");
+    input.setAttribute("name", inputName);
     input.setAttribute("multiple", "multiple");
     input.setAttribute("id", "files");
     form.appendChild(input);
